@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<p>* - denotes required field</p>
+	<p>> 1 donation	> 2 confirmation	 > 3 Thank you!</p>
+
+	<form>
+
+		<p style="color:red;font-size:20px">Donor Information</p>
+
+		First Name* <input type="text" name="first_name" required><br><br>
+		Last Name* <input type="text" name="last_name" required><br><br>
+		Company <input type="text" name="company"><br><br>
+		Address 1* <input type="text" name="address1" required><br><br>
+		Address 2 <input type="text" name="address2"><br><br>
+		City* <input type="text" name="city" required><br><br>
+		State*  <select required>
+					<option>Select a state</option>
+					<option value="Dhaka">Dhaka</option>
+					<option value="Chittagong">Chittagong</option>
+					<option value="Rajshahi">Rajshahi</option>
+				</select><br><br>
+
+		Phone <input type="text" name="phone"><br><br>
+		Fax <input type="text" name="fax"><br><br>
+		Email <input type="text" name="email" required><br><br>
+		Donation Amount*     
+			<input type="radio" name="donation" value="none"> None   
+			<input type="radio" name="donation" value="50"> $50   
+			<input type="radio" name="donation" value="75"> $75   
+			<input type="radio" name="donation" value="100"> $100   
+			<input type="radio" name="donation" value="250"> $250   
+			<input type="radio" name="donation" value="Other"> Other   
+
+			<p style="font-size: 12px">(Check a button or type in<br>your amount)</p>
+
+		Other Amount $ <input type="text" name="amount"><br><br>
+		Recurring Donation <input type="checkbox" name="yes">I am interested in giving on a regular basis<br><br>
+			<p style="font-size: 12px">Check if yes</p>
+
+		Monthly Credit Card $ <input type="text" name="monthly_amount"> For <input type="text" name="no_month"> months<br><br>
+
+		<p style="color:red;font-size:20px">Honorarium and Memorial Donation Information</p>
+
+		I would like to make this donation 
+			<input type="radio" name="honorarium_donation" value="to_honor"> To Honor   
+			<input type="radio" name="honorarium_donation" value="in_memory"> In memory of   <br>
+
+		            Name        <input type="text" name="honor_name"><br>
+		Acknowledge Donation To <input type="text" name="honor_acknoledge"><br>
+					Address     <input type="text" name="honor_address"><br>
+					City  		<input type="text" name="honor_city"><br>
+
+		State  <select required>
+					<option>Select a state</option>
+					<option value="Dhaka">Dhaka</option>
+					<option value="Chittagong">Chittagong</option>
+					<option value="Rajshahi">Rajshahi</option>
+				</select><br><br>
+
+					Zip 		<input type="text" name="honor_zip"><br>
+
+		<p style="color:red;font-size:20px">Addtional Information</p>
+		<p style="font-size: 12px">Please enter your name, company or organization as you would like it to appear in our publications:
+
+					Name 	    <input type="text" name="addiotional_name">
+		<br><br>
+		<button>Submit</button>
+	</form>
+</body>
+</html>
